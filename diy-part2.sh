@@ -17,4 +17,4 @@ sed -i 's/root::0:0:99999:7:::/root:$1$/YSxcdBO$bFuXE13KnaJb25YA8b6/1/:18825:0:9
 # Download luci-app-Poweroff
 git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/uci-app-poweroff
 # Download OpenAppFilter
-git clone https://github.com/destan19/OpenAppFilter.git package/lean/uci-app-poweroff
+git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
