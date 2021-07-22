@@ -15,8 +15,8 @@ sed -i 's/192.168.1.1/192.168.1.254/g' package/base-files/files/bin/config_gener
 #echo "option proto 'static'" >> package/base-files/files/bin/config_generate
 #echo "option type 'bridge'" >> package/base-files/files/bin/config_generate
 #echo "option netmask '255.255.255.0'" >> package/base-files/files/bin/config_generate
-echo "option gateway '192.168.5.1'" >> package/base-files/files/bin/config_generate
-echo "option dns '192.168.5.1''" >> package/base-files/files/bin/config_generate
+echo "option gateway '192.168.1.1'" >> package/base-files/files/bin/config_generate
+echo "option dns '192.168.1.1''" >> package/base-files/files/bin/config_generate
 # Modify default passwork:00000000
 #sed -i 's/root::0:0:99999:7:::/root:$1$/YSxcdBO$bFuXE13KnaJb25YA8b6/1/:18825:0:99999:7:::/g' package/base-files/files/etc/shadow
 # Download luci-app-Poweroff
