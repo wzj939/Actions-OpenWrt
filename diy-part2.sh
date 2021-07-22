@@ -12,9 +12,9 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.1.254/g' package/base-files/files/bin/config_generate
-echo "network.lan.proto='static'" >> package/base-files/files/bin/config_generate
-#echo "network.lan.type='bridge'" >> package/base-files/files/bin/config_generate
-#echo "network.lan.netmask='255.255.255.0'" >> package/base-files/files/bin/config_generate
+echo "option proto 'static'" >> package/base-files/files/bin/config_generate
+#echo "option type 'bridge'" >> package/base-files/files/bin/config_generate
+#echo "option netmask '255.255.255.0'" >> package/base-files/files/bin/config_generate
 echo "option gateway '192.168.5.1'" >> package/base-files/files/bin/config_generate
 echo "option dns '192.168.5.1''" >> package/base-files/files/bin/config_generate
 # Modify default passwork:00000000
