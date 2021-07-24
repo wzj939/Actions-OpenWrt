@@ -25,3 +25,4 @@ git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilt
 sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.4/g' target/linux/x86/Makefile
 # Frpc site
 sed -i 's/option server_addr 'yourdomain.com'/option server_addr 'ol301a.venseco.cf'/g' package/lean/luci-app-frpc/root/etc/config/frp
+sed -i 's/option token '1234567'/option token 'qazwsx939'/g' package/lean/luci-app-frpc/root/etc/config/frp
