@@ -21,3 +21,5 @@ sed -i -e 's!root::0:0:99999:7:::!root:$1$/YSxcdBO$bFuXE13KnaJb25YA8b6/1/:18825:
 git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/uci-app-poweroff
 # Download OpenAppFilter
 git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
+#Change kernel
+sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.4/g' target/linux/x86/Makefile
