@@ -19,10 +19,13 @@ sed -i -e 's!root::0:0:99999:7:::!root:$1$/YSxcdBO$bFuXE13KnaJb25YA8b6/1/:18825:
 
 # Download luci-app-Poweroff
 git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/uci-app-poweroff
+
 # Download OpenAppFilter
 git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
+
 # Change kernel
 sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.4/g' target/linux/x86/Makefile
+
 # Frpc site
 sed -i "s/option enabled '0'/option enabled '1'/g" package/lean/luci-app-frpc/root/etc/config/frp
 sed -i 's/yourdomain.com/ol301a.venseco.cf/g' package/lean/luci-app-frpc/root/etc/config/frp
