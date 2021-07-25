@@ -37,7 +37,7 @@ sed -i 's/1234567/qazwsx939/g' package/lean/luci-app-frpc/root/etc/config/frp
 #echo "option use_encryption '1'" >> package/lean/luci-app-frpc/root/etc/config/frp
 #echo "option use_compression '1'" >> package/lean/luci-app-frpc/root/etc/config/frp
 #echo "option remark 'openwrt'" >> package/lean/luci-app-frpc/root/etc/config/frp
-echo 'config proxy
+echo "config proxy
   option enable '1'
   option type 'http'
   option domain_type 'custom_domains'
@@ -47,4 +47,4 @@ echo 'config proxy
   option proxy_protocol_version 'disable'
   option use_encryption '1'
   option use_compression '1'
-  option remark 'openwrt'' >> package/lean/luci-app-frpc/root/etc/config/frp
+  option remark 'openwrt'" >> package/lean/luci-app-frpc/root/etc/config/frp
