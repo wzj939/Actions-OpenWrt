@@ -26,4 +26,14 @@ sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.4/g' target/linux/x86/Makefil
 # Frpc site
 sed -i 's/option server_addr 'yourdomain.com'/option server_addr 'ol301a.venseco.cf'/g' package/lean/luci-app-frpc/root/etc/config/frp
 sed -i 's/option token '1234567'/option token 'qazwsx939'/g' package/lean/luci-app-frpc/root/etc/config/frp
-echo "config proxy/noption enable '1'\noption type 'http'\noption domain_type 'custom_domains'\noption custom_domains 'lede100.venseco.tk'\noption local_ip '192.168.1.254'\noption local_port '80'\noption proxy_protocol_version 'disable'\noption use_encryption '1'\noption use_compression '1'\noption remark 'openwrt'" >> package/lean/luci-app-frpc/root/etc/config/frp
+echo "config proxy" >> package/lean/luci-app-frpc/root/etc/config/frp
+echo "option enable '1'" >> package/lean/luci-app-frpc/root/etc/config/frp
+echo "option type 'http'" >> package/lean/luci-app-frpc/root/etc/config/frp
+echo "option domain_type 'custom_domains'" >> package/lean/luci-app-frpc/root/etc/config/frp
+echo "option custom_domains 'lede100.venseco.tk'" >> package/lean/luci-app-frpc/root/etc/config/frp
+echo "option local_ip '192.168.1.254'" >> package/lean/luci-app-frpc/root/etc/config/frp
+echo "option local_port '80'" >> package/lean/luci-app-frpc/root/etc/config/frp
+echo "option proxy_protocol_version 'disable'" >> package/lean/luci-app-frpc/root/etc/config/frp
+echo "option use_encryption '1'" >> package/lean/luci-app-frpc/root/etc/config/frp
+echo "option use_compression '1'" >> package/lean/luci-app-frpc/root/etc/config/frp
+echo "option remark 'openwrt'" >> package/lean/luci-app-frpc/root/etc/config/frp
