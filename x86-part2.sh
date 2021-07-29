@@ -22,4 +22,4 @@ git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/u
 # Download OpenAppFilter
 git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
 #Change kernel
-sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.4/g' target/linux/x86/Makefile
+#sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.4/g' target/linux/x86/Makefile
