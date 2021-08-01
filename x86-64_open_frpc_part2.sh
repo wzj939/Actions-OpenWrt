@@ -25,7 +25,7 @@ git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/u
 git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
 
 # Change kernel
-sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.4/g' target/linux/x86/Makefile
+#sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.4/g' target/linux/x86/Makefile
 
 # Frpc site
 sed -i "s/option enabled '0'/option enabled '1'/g" package/lean/luci-app-frpc/root/etc/config/frp
