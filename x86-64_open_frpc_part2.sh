@@ -16,7 +16,7 @@ sed -i '/exit 0/i\uci set network.lan.ipaddr='192.168.1.254'\nuci set network.la
 
 # Modify default passwork:00000000
 #sed -i -e 's!root::0:0:99999:7:::!root:$1$/YSxcdBO$bFuXE13KnaJb25YA8b6/1/:18825:0:99999:7:::!g' package/base-files/files/etc/shadow
-sed -i -e 's#$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::#$1$/YSxcdBO$bFuXE13KnaJb25YA8b6/1/:18825:0:99999:7:::#g' package/lean/default-settings/files/zzz-default-settings
+sed -i -e 's!$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::!$1$/YSxcdBO$bFuXE13KnaJb25YA8b6/1/:18825:0:99999:7:::!g' package/lean/default-settings/files/zzz-default-settings
 
 # Download luci-app-Poweroff
 git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/uci-app-poweroff
