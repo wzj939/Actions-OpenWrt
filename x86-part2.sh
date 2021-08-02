@@ -26,14 +26,14 @@ git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilt
 
 # Frpc site
 sed -i "s/option enabled '0'/option enabled '1'/g" package/lean/luci-app-frpc/root/etc/config/frp
-sed -i 's/yourdomain.com/ol301a.venseco.cf/g' package/lean/luci-app-frpc/root/etc/config/frp
+sed -i 's/yourdomain.com/venseco.ga/g' package/lean/luci-app-frpc/root/etc/config/frp
 sed -i 's/1234567/qazwsx939/g' package/lean/luci-app-frpc/root/etc/config/frp
 echo "config proxy
      option enable '1'
      option type 'http'
      option domain_type 'custom_domains'
-     option custom_domains 'lede100.venseco.tk'
-     option local_ip '192.168.1.254'
+     option custom_domains 'lede.venseco.ga'
+     option local_ip '192.168.5.6'
      option local_port '80'
      option proxy_protocol_version 'disable'
      option use_encryption '1'
