@@ -12,7 +12,8 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.1.254/g' package/base-files/files/bin/config_generate
-sed -i '/exit 0/i\uci set network.lan.ipaddr='192.168.1.254'\nuci set network.lan.proto='static'\nuci set network.lan.type='bridge'\nuci set network.lan.ifname='eth0'\nuci set network.lan.netmask='255.255.255.0'\nuci set network.lan.gateway='192.168.1.1'\nuci set network.lan.dns='192.168.1.1'\nuci commit network' package/lean/default-settings/files/zzz-default-settings
+#sed -i '/exit 0/i\uci set network.lan.ipaddr='192.168.1.254'\nuci set network.lan.proto='static'\nuci set network.lan.type='bridge'\nuci set network.lan.ifname='eth0'\nuci set network.lan.netmask='255.255.255.0'\nuci set network.lan.gateway='192.168.1.1'\nuci set network.lan.dns='192.168.1.1'\nuci commit network' package/lean/default-settings/files/zzz-default-settings
+sed -i '/exit 0/i\uci set network.lan.ipaddr='192.168.5.1'\nuci set network.lan.proto='static'\nuci set network.lan.type='bridge'\nuci set network.lan.ifname='eth0'\nuci set network.lan.netmask='255.255.255.0'\nuci set network.lan.gateway='192.168.5.1'\nuci set network.lan.dns='192.168.5.1'\nuci commit network' package/lean/default-settings/files/zzz-default-settings
 
 # Modify default passwork:00000000/qazwsx939
 sed -i -e 's#root::0:0:99999:7:::#root:$1$/YSxcdBO$bFuXE13KnaJb25YA8b6/1/:18825:0:99999:7:::#g' package/base-files/files/etc/shadow
@@ -36,7 +37,7 @@ git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilt
      option type 'http'
      option domain_type 'custom_domains'
      option custom_domains 'lede.venseco.ga'
-     option local_ip '192.168.1.254'
+     option local_ip '192.168.5.1'
      option local_port '80'
      option proxy_protocol_version 'disable'
      option use_encryption '1'
