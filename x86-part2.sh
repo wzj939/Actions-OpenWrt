@@ -33,7 +33,7 @@ echo "config proxy
      option enable '1'
      option type 'http'
      option domain_type 'custom_domains'
-     option custom_domains 'lede.venseco.ga'
+     option custom_domains 'b6220.venseco.ga'
      option local_ip '192.168.5.1'
      option local_port '80'
      option proxy_protocol_version 'disable'
